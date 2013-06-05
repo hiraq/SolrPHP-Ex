@@ -1,0 +1,57 @@
+2013/06/04 01:15:47 [error] 4777#0: *1 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: php.solr, request: "GET /favicon.ico HTTP/1.1", host: "php.solr"
+2013/06/04 01:15:47 [error] 4777#0: *3 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: php.solr, request: "GET /favicon.ico HTTP/1.1", host: "php.solr"
+2013/06/06 00:43:45 [error] 1094#0: *35 FastCGI sent in stderr: "PHP message: PHP Warning:  SolrClient::ping(): Solr HTTP Error : 'Couldn't connect to server'  in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/home.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20
+PHP message: PHP   5. SolrClient->ping() /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/home.php:16
+PHP message: PHP Warning:  SolrClient::ping(): couldn't connect to host in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/home.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20
+PHP message: PHP   5. SolrClient->ping() /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/home.php:16" while reading response header from upstream, client: 127.0.0.1, server: php.solr, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "php.solr"
+2013/06/06 00:46:26 [error] 1094#0: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Can't use method return value in write context in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/home.php on line 20
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60" while reading response header from upstream, client: 127.0.0.1, server: php.solr, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "php.solr"
+2013/06/06 00:51:38 [error] 1094#0: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use object of type SolrInputDocument as array in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/search.php on line 16
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20" while reading response header from upstream, client: 127.0.0.1, server: php.solr, request: "GET /?action=search HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "php.solr", referrer: "http://php.solr/"
+2013/06/06 00:52:32 [error] 1094#0: *64 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to SolrDocument::merge() must be an instance of SolrDocument, instance of SolrInputDocument given, called in /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php on line 20 and defined in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/search.php on line 22
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20" while reading response header from upstream, client: 127.0.0.1, server: php.solr, request: "GET /?action=search HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "php.solr", referrer: "http://php.solr/"
+2013/06/06 00:55:20 [error] 1094#0: *68 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: client in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/search.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20
+PHP message: PHP Fatal error:  Call to a member function query() on a non-object in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/search.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20" while reading response header from upstream, client: 127.0.0.1, server: php.solr, request: "GET /?action=search HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "php.solr", referrer: "http://php.solr/"
+2013/06/06 00:58:34 [error] 1094#0: *76 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: client in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/search.php on line 18
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20
+PHP message: PHP Fatal error:  Call to a member function addDocument() on a non-object in /home/hiraq/Jobs/My/www/SolrPHP-Ex/includes/search.php on line 18
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:0
+PHP message: PHP   2. Core\Response->listen() /home/hiraq/Jobs/My/www/SolrPHP-Ex/index.php:58
+PHP message: PHP   3. Core\Import::file() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Response.php:60
+PHP message: PHP   4. require_once() /home/hiraq/Jobs/My/www/SolrPHP-Ex/lib/Core/Import.php:20" while reading response header from upstream, client: 127.0.0.1, server: php.solr, request: "GET /?action=search HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "php.solr", referrer: "http://php.solr/"
