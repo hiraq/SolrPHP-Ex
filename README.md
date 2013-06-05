@@ -9,15 +9,17 @@ Requirements
 1. PHP Version: >= 5.3
 2. [Solr](http://lucene.apache.org/solr/downloads.html)
 3. [PHP Solr Extension](http://www.php.net/manual/en/solr.installation.php)
-4. Tomcat
-5. Java SDK (7)
+4. Java SDK (7)
 
-Install Tomcat
+Install Solr
 ==============
 
-Based on Debian/Ubuntu:
-
-sudo apt-get install tomcat7
+1. Download Solr
+2. Extract 
+3. Go to extracted solr folder
+4. 'cd' to example folder
+5. java -jar start.jar
+6. PORT : 8983 -> http://localhost:8983/solr
 
 
 Install PHP Extension (C-compiled) via package
